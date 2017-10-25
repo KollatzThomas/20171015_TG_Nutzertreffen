@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DARIAH-DE Annotation Sandbox und Digilib</title>
+
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+
+        <!-- styles for included libraries -->
+
+        <!-- chartist -->
+        <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+
+        <!-- js needed in head -->
+
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h4 class="down-25"><strong>25.10.2017 | TG-Nutzertreffen #10</strong></h4>
+                <h4 class="up-25"><strong><a href="https://de.dariah.eu/10.TextGrid-Nutzertreffen"
+                            >Annotieren mit DARIAH-Werkzeugen </a></strong></h4>
+                <h1>Annotation Sandbox und Digilib</h1>
+                <h2 class="red up-25" style="font-size: 42px;">workshop</h2>
+                <h4>
+                    <strong>Slides:</strong>
+                    <a href="https://kollatzthomas.github.io/20171025_TG_Nutzertreffen"
+                        title="View the presentation online"> https://kollatzthomas.github.io/ </a>
+                </h4>
+                <h5>
+                    <a href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a>, <a
+                        href="http://steinheim-institut.de/wiki/index.php/Mitarbeiter:Thomas_Kollatz"
+                        >Essen</a> | <a
+                        href="http://www.adwmainz.de/mitarbeiter/profil/drs-thomas-kollatz.html"
+                        >Mainz</a>| <img src="resources/img/Twitter_bird_logo_2012.svg"
+                        alt="Twitter" class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter">@kol_t</a>
+                    | <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                        class="gh-icon" />
+                    <a href="https://github.com/KollatzThomas" title="Thomas Kollatz on GitHub"
+                        >ThomasKollatz</a> | <a href="https://creativecommons.org/licenses/by/4.0/"
+                        >CC-BY 4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                <div class="centered">
+                    <h1 class="red">Annotation Sandbox</h1>
+                    <h2 class="line-height-one-five"> _beta_ </h2>
+                    <blockquote><a href="https://annotation.de.dariah.eu"
+                            >https://annotation.de.dariah.eu</a></blockquote>
+                </div>
+                <div class="down-50">
+                    <p>Die DARIAH-DE Annotation Sandbox ermöglicht</p>
+                    <ul class="line-height-one-five medium">
+                        <li>Text- und Bildannotationen im TextGrid Repositorium.</li>
+                        <li>Annotation beliebiger Webseiten über den DARIAH-DE Annotationsdienst. </li>
+                        <li>Einbetten des Annotationsdiensts in eigene Webseiten. </li>
+                        <li>Verwalten der Annotationen im AnnotationViewer</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red centered">DARIAH-DE Annotation Sandbox</h2>
+                <div class="mfp-lightbox row centered">
+                    <a href="resources/img/sandbox.png" title="Login">
+                        <img class="pull-up" src="resources/img/sandbox.png" style="width:60%" />
+                    </a>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/"
+                    >https://annotation.de.dariah.eu/</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">Annotation Login</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/login_big.png/" title="Login">
+                                <img class="pull-up" src="resources/img/login_big.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <ul class="line-height-one-five medium">
+                            <li> Login mit DARIAH Account </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/" target="_blank"
+                        >https://annotation.de.dariah.eu/</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Textannotation im TGRep</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/textannotation_kleist.png" title="Textannotation">
+                                <img class="pull-up" src="resources/img/textannotation_kleist.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-height-one-five">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Annotieren der TGRep Texte </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/textgridrep/browse.html?id=textgrid:r0rg.0"
+                        >https://annotation.de.dariah.eu/textgridrep/browse.html?id=textgrid:r0rg.0</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Textannotation im DTA</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/DTA_im_AnnotationManager.png"
+                                title="Textannotation">
+                                <img class="pull-up"
+                                    src="resources/img/DTA_im_AnnotationManager.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-height-one-five">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Annotieren des Deutschen Textarchivs</li>
+                            <li> Syntax: <pre><code>data.html?uri=dta:werk</code></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/AnnotationViewer/data.html?uri=dta:bebel_wahlrecht_1911"
+                        >https://annotation.de.dariah.eu/AnnotationViewer/data.html?uri=dta:bebel_wahlrecht_1911</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Annotation beliebiger Webseiten</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/annotate_a_website.png"
+                                title="Annotation beliebiger Webseiten">
+                                <img class="pull-up" src="resources/img/annotate_a_website.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-height-one-five">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Webinhalte mit DARIAH Annotation Service annotieren </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/via/https://de.dariah.eu/10.TextGrid-Nutzertreffen"
+                        >https://annotation.de.dariah.eu – Annotate a Website</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Annotationsservice einbetten</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/epidat_annotation.png"
+                                title="Annotationservice embedded">
+                                <img class="pull-up" src="resources/img/epidat_annotation.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-height-one-five medium">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Script eingebaut in eigene Webangebote ermöglicht, die betreffende
+                                Seite zu annotieren</li>
+                            <li> Codesnippet, siehe: <a href="https://annotation.de.dariah.eu"
+                                    >https://annotation.de.dariah.eu</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361"
+                        >http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Annotation Viewer</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/annotationViewer_big.png"
+                                title="AnnotationViewer">
+                                <img class="pull-up" src="resources/img/annotationViewer_big.png"
+                                    style="width:100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-hight-one-five medium">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Verwaltung der Annotationen </li>
+                            <li> Suche in Annotationen </li>
+                            <li> Annotationsgruppen anlegen </li>
+                            <li> Annotationen exportieren<ul>
+                                    <li>CSV</li>
+                                    <li>TextGridLab</li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/AnnotationViewer/"
+                        >https://annotation.de.dariah.eu/AnnotationViewer/</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Bildannotation</h2>
+                <div class="row">
+                    <div class="six columns first">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/Bildannotation_neu.png.png"
+                                title="Bildannotation">
+                                <img class="pull-up" src="resources/img/Bildannotation_neu.png"
+                                    style="width:80%" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns last">
+                        <ul class="line-height-one-five">
+                            <li> Anmelden mit DARIAH Account </li>
+                            <li> Annotation der TGRep Bilddateien </li>
+                            <li> Annotationsspalte in DigiLib </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="centered pull-up small"> Website: <a
+                        href="https://annotation.de.dariah.eu/textgridrep/digilib/jquery/digilib.html?fn=textgrid:vqn8.0"
+                        >https://annotation.de.dariah.eu/textgridrep/digilib/jquery/digilib.html?fn=textgrid:vqn8.0</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Digilib</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/digilib-sourceforge-net-scaler-api-html.png"><img
+                                    class="pull up"
+                                    src="resources/img/digilib-sourceforge-net-scaler-api-html.png" style="width:40%"
+                                 /></a>
+                        </div>
+                    </div>
+                    <div class="six columns"><ul class="line-height-one-five">
+                            <li>Parameter <ul>
+                                    <li>The <a href="http://digilib.sourceforge.net/scaler-api.html"
+                                            >digilib Scaler API</a></li>
+                                    <li>The <a href="http://digilib.sourceforge.net/iiif-api.html"
+                                        >digilib IIIF API</a></li>
+                                </ul></li>
+                        </ul></div>
+                </div>
+                <p class="centered pull-up small">Website: <a
+                        href="http://digilib.sourceforge.net/scaler-api.html"
+                        >http://digilib.sourceforge.net/scaler-api.html</a></p>
+            </div>
+            
+            <div class="step centered">
+                <div>
+                    <h2>Dank</h2>
+                    <h4 class="red">den Programmierern</h4>
+                    <blockquote> Robert Casties<br /> Mathias Göbel<br /> Martin Haase<br /> Ubbo
+                        Veentjer<br />
+                    </blockquote>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Literatur, Webservice und Slides</h2>
+                <h4>Literatur</h4>
+                <ul class="line-height-one-five small">
+                    <li>
+                        <a href="https://wiki.de.dariah.eu/x/Sg8CAg">Spezifikation von Diensten</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://wiki.de.dariah.eu/download/attachments/14651583/r621_2.pdf?version=1&amp;modificationDate=1456778509100&amp;api=v2"
+                            >Digitale Annotationen: ‘Best Practices’ und Potentiale II</a>
+                        [PDF]</li>
+                </ul>
+                <h4>Webservice</h4>
+                <ul class="line-height-one-five small">
+                    <li><a href="https://annotation.de.dariah.eu">Annotation Sandbox</a></li>
+                </ul>
+                <h4>Software</h4>
+                <ul class="line-height-one-five small">
+                    <li>
+                        <a href="https://github.com/impress/impress.js">Impress.js</a>
+                        (Präsentation) </li>
+                </ul>
+                <h4>Download</h4>
+                <ul class="line-height-one-five small">
+                    <li>
+                        <a href="https://github.com/kollatzthomas">
+                            https://kollatzthomas.github.io/20171025_TG_Nutzertreffen </a>
+                    </li>
+                    <li> Alle Inhalte, Illustrationen und Bilder sind frei zur Weiterverwendung und
+                        Modifikation.<br /> Lizenz: <a
+                            href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, <a
+                            href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script type="text/javascript" src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script type="text/javascript" src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script type="text/javascript" src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>
+        <!-- codemirror -->
+        <script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+    </body>
+</html>
